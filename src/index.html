@@ -9,12 +9,64 @@
     <link rel="stylesheet" href="/dist/output.css"/>
     <title>Leonardo Escaroz</title>
 </head>
-<body>
+<body class="font-nunito">
     <!-- Intro section -->
-    <div>
-        <h1 class="text-3xl text-red-500 sm:text-blue-500">Hello World</h1>
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
         <!-- navbar -->
-        <nav></nav>
+        <nav class="w-full fixed top-0 bg-white">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-indigo-500">LeoEs</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Homepage</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Works</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <img
+                    id="moon"
+                    src="./imgs/Moon.png"
+                    class="hidden md:block w-5 cursor=pointer"
+                    alt="moon image"
+                />
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu"
+                class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+                >
+                    <li>
+                        <a id="link" href="#">homepage</a>
+                    </li>
+                    <li>
+                        <a id="link" href="#about">about me</a>
+                    </li>
+                    <li>
+                        <a id="link" href="#works">works</a>
+                    </li>
+                    <li>
+                        <a id="link" href="#services">services</a>
+                    </li>
+                    <li>
+                        <a id="link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- Intro content -->
         <div></div>
     </div>
