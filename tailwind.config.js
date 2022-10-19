@@ -8,7 +8,7 @@ module.exports = {
       }
     },
     fontFamily:{
-      nunito:['Nunito', 'sans-serif']
+      sora:['Sora', 'sans-serif']
     }
   },
   plugins: [],

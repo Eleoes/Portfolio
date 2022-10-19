@@ -4,66 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" 
-    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/output.css"/>
     <title>Leonardo Escaroz</title>
 </head>
-<body class="font-nunito">
-    <!-- Intro section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
-        <!-- navbar -->
-        <nav class="w-full fixed top-0 bg-white">
-            <div class="container mx-auto py-5 flex items-center justify-between">
-                <div class="flex items-center gap-2 z-20">
-                    <a href=#><span class="text-2xl font-bold text-indigo-500">日</span></a>
+<body class="font-sora bg-neutral-100">
+    <header>
+        <nav>
+            <div class="md:flex flex-col sm:hidden border-r-2 border-neutral-200 w-72 h-full  absolute  items-center">
+                <div class="mt-60">
+                    <a href="#">
+                        日
+                    </a>
                 </div>
-                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
-                    <li class="hover:text-gray-500">
-                        <a href="#">About Me</a>
+                <ul class="mt-24 text-gray-600 font-bold text-sm uppercase space-y-4">
+                    <li>
+                        <a href="#">About</a>
                     </li>
-                    <li class="hover:text-gray-500">
+                    <li>
                         <a href="#">Works</a>
                     </li>
-                    <li class="hover:text-gray-500">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="hover:text-gray-500">
+                    <li>
                         <a href="#">Contact</a>
                     </li>
                 </ul>
-                <img
-                    id="moon"
-                    src="./imgs/Moon.png"
-                    class="hidden md:block w-5 cursor=pointer"
-                    alt="moon image"
-                />
-                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
+            </div>
+            <!-- navbar for mobile screens -->
+            <div class="md:hidden sm:flex w-full fixed top-0">
+                <div class="container mx-auto py-5 flex ites-center justify-between">
+                    <div class="flex items-center gap-2 z-20">
+                        <a href=#><span class="text-2xl font-bold text-black">日</span></a>
+                    </div>
+                    <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                        <span class="text-2xl font-bold text-black">三</span>
+                    </div>
+                    <ul id="menu"
+                    class="hidden absolute block left-0 top-6 w-full p-10  border-b-2 border-netural-200 space-y-10 text-center uppercase"
+                    >
+                        <li>
+                            <a id="link" href="#about">about</a>
+                        </li>
+                        <li>
+                            <a id="link" href="#works">works</a>
+                        </li>
+                        <li>
+                            <a id="link" href="#contact">contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul id="menu"
-                class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
-                >
-                    <li>
-                        <a id="link" href="#about">about me</a>
-                    </li>
-                    <li>
-                        <a id="link" href="#works">works</a>
-                    </li>
-                    <li>
-                        <a id="link" href="#services">services</a>
-                    </li>
-                    <li>
-                        <a id="link" href="#contact">contact</a>
-                    </li>
-                </ul>
             </div>
         </nav>
-        <!-- Intro content -->
-        <div></div>
-    </div>
+        
+
+    </header>
+
+    <main>
+        Hello content
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
