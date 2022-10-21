@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       screens:{
         "sm":"480px",
+      },
+      dropShadow: {
+        "3xl":"10px 5px 0px black",
       }
     },
     fontFamily:{
