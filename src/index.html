@@ -24,7 +24,10 @@
                     <a href="#works">Works</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -66,75 +69,62 @@
         <div id="about" class="px-10">
             <div class="container mx-auto py-20 flex flex-col-reverse lg:flex-row items-center gap-20">
                 <div class="my-auto flex flex-col gap-3 mx-20">
-                    <div></div>
-                    <h1 class="font-bold text-3xl">Leonardo Escaroz</h1>
-                    <h2 class="font-bold font-medium">Software Engineer</h2>
-                    <a 
-                    href="./imgs/Leo Escaroz_Resume.pdf" download
-                    >
-                        <button class="transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white mt-2 px-3 rounded-md">
-                            Resume
-                            <i class='bx bx-down-arrow-alt animate-bounce text-xl'></i>
-                        </button>
-                    </a>
-                    <p class="text-gray-400 mb-12">
-                        Hi! My name is Leo [LEH-OH], my pronouns are He/They. 
+                    <div class="items-center my-auto">
+                        <a 
+                        class="float-right inline"
+                        href="./imgs/Leo Escaroz_Resume.pdf" download
+                        >
+                            <button class="transition duration-500 border-0 text-lg h-12 w-36 bg-red-500 hover:bg-red-700 text-white px-3 rounded-md">
+                                Resume
+                            </button>
+                        </a>
+                        <h1 class="font-bold text-3xl float-left">Leonardo Escaroz</h1>
+                    </div>
+                    <h2 class="font-bold font-medium">Software Engineer | Fullstack</h2>
+                    <p class="text-gray-400">
+                        Hi! My name is Leo [leh-oh], my pronouns are He/They. 
                         I’m a passionate learner, devoted problem solver and proud plant-parent seeking to create accessible 
                         and intuitive solutions to problems around the world. 
+                    </p>
+                    <p class="text-gray-400 mb-12">
                         Eager to combine my skills in Architecture and the Construction Industry as well as my skills in 
-                        Software Engineering to provide meaningful experiences through digital solutions.
+                        Software Engineering to provide meaningful experiences through digital solutions!
                     </p>
                     <!-- skills -->
-                    <h2 class="font-bold">Skills</h2>
-
-                    <h3 class="text-gray-400 font-medium">HTML</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-full bg-stone-500 h-1.5 rounded-md"></div>
+                    <h2 class="font-bold text-2xl mx-auto">Skills</h2>
+                    
+                    <span class="font-bold mx-auto">Languages</span>
+                    <div class="flex flex-wrap gap-6 mx-auto">
+                        <span class="text-gray-400 font-medium">HTML</span>
+                        <span class="text-gray-400 font-medium">CSS</span>
+                        <span class="text-gray-400 font-medium">Javascript</span>
+                        <span class="text-gray-400 font-medium">Python</span>
+                        <span class="text-gray-400 font-medium">SQL</span>
                     </div>
-
-                    <h3 class="text-gray-400 font-medium">CSS</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-5/6 bg-stone-500 h-1.5 rounded-md"></div>
+                    
+                    <span class="font-bold mx-auto">Libraries & Frameworks</span>
+                    <div class="flex flex-wrap gap-6 mx-auto">
+                        <span class="text-gray-400 font-medium">React</span>
+                        <span class="text-gray-400 font-medium">NextJS</span>
+                        <span class="text-gray-400 font-medium">Express</span>
+                        <span class="text-gray-400 font-medium">EJS</span>
+                        <span class="text-gray-400 font-medium">Sass</span>
+                        <span class="text-gray-400 font-medium">NodeJS</span>
                     </div>
-
-                    <h3 class="text-gray-400 font-medium">Javascript</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-5/6 bg-stone-500 h-1.5 rounded-md"></div>
-                    </div>
-
-                    <h3 class="text-gray-400 font-medium">React</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-2/3 bg-stone-500 h-1.5 rounded-md"></div>
-                    </div>
-
-                    <h3 class="text-gray-400 font-medium">Python</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-2/3 bg-stone-500 h-1.5 rounded-md"></div>
-                    </div>
-
-                    <h3 class="text-gray-400 font-medium">SQL</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-1/2 bg-stone-500 h-1.5 rounded-md"></div>
-                    </div>
-
-                    <h3 class="text-gray-400 font-medium">PostreSQL</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-1/2 bg-stone-500 h-1.5 rounded-md"></div>
-                    </div>
-
-                    <h3 class="text-gray-400 font-medium">Django</h3>
-                    <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                        <div class="w-5/6 bg-stone-500 h-1.5 rounded-md"></div>
+                    <span class="font-bold mx-auto">Databases</span>
+                    <div class="flex flex-wrap gap-6 mx-auto items-center">
+                        <span class="text-gray-400 font-medium">MongoDB</span>
+                        <span class="text-gray-400 font-medium">PostgreSQL</span>
                     </div>
                 </div>
             </div>
         </div>
         <!-- works  -->
-        <div id="works" class="py-20 px-10">
-            <div class="container mx-auto">
+        <div id="works" class="py-20 mx-20">
+            <div class="container mx-auto px-10">
                 <!-- top section  -->
                 <div class="flex flex-col gap-3 items-center">
-                    <h2 class="font-bold">Works & Projects</h2>
+                    <h2 class="font-bold text-2xl">Works & Projects</h2>
                     <p class="mx-20 text-center text-gray-400">
                         I help designers, small agencies and businesses bring their ideas to
                         life. Powered by VS Code and green tea, I turn your requirements 
@@ -172,6 +162,27 @@
                 </div>
             </div>
         </div>
+        <!-- contact -->
+        <div id="contact" class="py-20 mx-20 mb-20">
+            <div class="container mx-auto px-10">
+                <div class="flex flex-col gap-3 items-center">
+                    <h2 class="font-bold text-2xl">Contact</h2>
+                </div>
+                <p class="mx-20 text-center text-gray-400">
+                    Send a word through my links below!
+                </p>
+                <div class="flex justify-between mt-12">
+                    <a class="h-10 w-10" href="www.linkedin.com/in/leonardo-escaroz">
+                        <img class="object-cover" src="./imgs/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a class="h-10 w-10" href="https://github.com/Eleoes">
+                        <img class="object-cover" src="./imgs/github.png" alt="Github">
+                    </a>
+                </div>
+            </div>
+            <!-- contact links -->
+            
+        </div>
         <!-- footer-->
         <div class="container mx-auto py-5 px-10 flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -180,14 +191,6 @@
             <span class="hidden md:block font-medium">
                 &copy; 2022 Leonardo Escaroz
             </span>
-            <div class="flex gap-2">
-                <a class="h-10 w-10" href="www.linkedin.com/in/leonardo-escaroz">
-                    <img class="object-cover" src="./imgs/linkedin.png" alt="LinkedIn">
-                </a>
-                <a class="h-10 w-10" href="https://github.com/Eleoes">
-                    <img class="object-cover" src="./imgs/github.png" alt="Github">
-                </a>
-            </div>
         </div>
     </main>
     <script src="script.js"></script>
