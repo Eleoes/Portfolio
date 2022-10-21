@@ -6,5 +6,8 @@ hamburger.addEventListener("click", () => {
     // hamburger.classList.toggle("bg-white");
 })
 
+function dropdownToggle () {
+    menu.classList.toggle("hidden");
+}
 
 

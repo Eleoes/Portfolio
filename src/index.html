@@ -29,8 +29,8 @@
             </ul>
         </nav>
         <!-- navbar for mobile screens -->
-        <nav class="md:hidden sm:flex w-full fixed top-0">
-            <div class="container mx-auto py-5 flex items-center justify-between">
+        <nav class="md:hidden flex w-full fixed top-0 bg-neutral-100 justify-center">
+            <div class="container mx-10 py-5 flex items-center justify-between">
                 <div class="flex items-center gap-2 z-20">
                     <a href="#about"><span class="text-2xl font-bold text-black">日</span></a>
                 </div>
@@ -38,23 +38,23 @@
                     <span class="text-2xl font-bold text-black">三</span>
                 </div>
                 <ul id="menu"
-                class="hidden absolute left-0 top-6 w-full p-10  border-b-2 border-netural-200 space-y-10 text-center uppercase"
+                class="hidden absolute left-0 top-6 w-full p-10  border-b-2 border-netural-200 space-y-10 text-center uppercase z-20 mt-10 bg-neutral-100"
                 >
                     <li>
-                        <a href="#about">about</a>
+                        <a href="#about" onclick="dropdownToggle()">about</a>
                     </li>
                     <li>
-                        <a href="#works">works</a>
+                        <a href="#works" onclick="dropdownToggle()">works</a>
                     </li>
                     <li>
-                        <a href="#contact">contact</a>
+                        <a href="#contact" onclick="dropdownToggle()">contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="relative h-screen flex flex-col items-center md:mx-52 pl-72">
+    <main class="mx-auto my-20 relative h-screen flex flex-col items-center md:mx-52 md:pl-72 md:my-0 -z-10">
         <!-- main content -->
         <!-- image --> 
         <div class="rounded-full h-48 w-48 mt-20">
@@ -65,8 +65,8 @@
         <!-- about me -->
         <div id="about" class="px-10">
             <div class="container mx-auto py-20 flex flex-col-reverse lg:flex-row items-center gap-20">
-                <div class="my-auto flex flex-col gap-3 mx-20">
-                    <div class="items-center my-auto">
+                <div class="my-auto flex flex-col gap-3 md:mx-20 text-center">
+                    <div class="items-center my-auto text-center flex flex-col">
                         <a 
                         class="float-right inline"
                         href="./imgs/Leo Escaroz_Resume.pdf" download
@@ -75,7 +75,7 @@
                                 Resume
                             </button>
                         </a>
-                        <h1 class="font-bold text-3xl float-left">Leonardo Escaroz</h1>
+                        <h1 class="font-bold text-3xl float-left py-8 md:py-0">Leonardo Escaroz</h1>
                     </div>
                     <h2 class="font-bold font-medium">Software Engineer | Fullstack</h2>
                     <p class="text-gray-400">
@@ -91,7 +91,7 @@
                     <h2 class="font-bold text-2xl mx-auto mb-12">Skills</h2>
                     
                     <span class="font-bold mx-auto">Languages</span>
-                    <div class="flex flex-wrap gap-6 mx-auto">
+                    <div class="md:flex md:flex-wrap gap-6 mx-auto">
                         <span class="text-gray-400 font-medium">HTML</span>
                         <span class="text-gray-400 font-medium">CSS</span>
                         <span class="text-gray-400 font-medium">Javascript</span>
@@ -100,7 +100,7 @@
                     </div>
                     
                     <span class="font-bold mx-auto">Libraries & Frameworks</span>
-                    <div class="flex flex-wrap gap-6 mx-auto">
+                    <div class="md:flex md:flex-wrap gap-6 mx-auto">
                         <span class="text-gray-400 font-medium">React</span>
                         <span class="text-gray-400 font-medium">NextJS</span>
                         <span class="text-gray-400 font-medium">Express</span>
@@ -109,7 +109,7 @@
                         <span class="text-gray-400 font-medium">NodeJS</span>
                     </div>
                     <span class="font-bold mx-auto">Databases</span>
-                    <div class="flex flex-wrap gap-6 mx-auto items-center">
+                    <div class="md:flex md:flex-wrap gap-6 mx-auto items-center">
                         <span class="text-gray-400 font-medium">MongoDB</span>
                         <span class="text-gray-400 font-medium">PostgreSQL</span>
                     </div>
@@ -117,12 +117,12 @@
             </div>
         </div>
         <!-- works  -->
-        <div id="works" class="py-20 mx-20">
-            <div class="container mx-auto px-10">
+        <div id="works" class="py-20 px-10 md:mx-20">
+            <div class="container mx-auto md:px-10">
                 <!-- top section  -->
                 <div class="flex flex-col gap-3 items-center">
                     <h2 class="font-bold text-2xl">Works & Projects</h2>
-                    <p class="mx-20 text-center text-gray-400">
+                    <p class="md:mx-20 text-center text-gray-400">
                         I help designers, small agencies and businesses bring their ideas to
                         life. Powered by VS Code and green tea, I turn your requirements 
                         into well-designed websites.
@@ -160,7 +160,7 @@
             </div>
         </div>
         <!-- contact -->
-        <div id="contact" class="py-20 mx-20 mb-20">
+        <div id="contact" class="py-20 md:mx-20 mb-20">
             <div class="container mx-auto px-10">
                 <div class="flex flex-col gap-3 items-center">
                     <h2 class="font-bold text-2xl">Contact</h2>
@@ -181,11 +181,8 @@
             
         </div>
         <!-- footer-->
-        <div class="container mx-auto py-5 px-10 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <a href="#home"><span class="text-2xl font-bold text-black">日</span></a>
-            </div>
-            <span class="hidden md:block font-medium">
+        <div class="container mx-auto py-5 px-10 text-center">
+            <span class="text-center font-medium">
                 &copy; 2022 Leonardo Escaroz
             </span>
         </div>

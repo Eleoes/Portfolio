@@ -619,6 +619,10 @@ video {
   z-index: 20;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .float-right {
   float: right;
 }
@@ -631,9 +635,19 @@ video {
   margin: 0.25rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .my-auto {
@@ -651,16 +665,16 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mt-60 {
-  margin-top: 15rem;
+.mt-80 {
+  margin-top: 20rem;
 }
 
 .mt-24 {
   margin-top: 6rem;
 }
 
-.ml-72 {
-  margin-left: 18rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-20 {
@@ -677,14 +691,6 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
-}
-
-.mt-80 {
-  margin-top: 20rem;
 }
 
 .inline {
@@ -753,6 +759,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -870,8 +880,14 @@ video {
   padding-right: 0.75rem;
 }
 
-.pl-72 {
-  padding-left: 18rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -979,35 +995,39 @@ video {
     display: flex;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:p-0 {
     padding: 0px;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
   }
 
-  .md\:mx-96 {
-    margin-left: 24rem;
-    margin-right: 24rem;
-  }
-
-  .md\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
-  .md\:mx-64 {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-
-  .md\:mx-52 {
-    margin-left: 13rem;
-    margin-right: 13rem;
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .md\:block {
@@ -1024,6 +1044,24 @@ video {
 
   .md\:w-5\/12 {
     width: 41.666667%;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pl-72 {
+    padding-left: 18rem;
   }
 }
 
